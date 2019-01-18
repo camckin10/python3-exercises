@@ -169,3 +169,42 @@ def monkey_trouble(a_smile, b_smile):
 		else:
 			return null
 
+	#problem 11
+	#front_back- Given a string, return a new string where the first and last  chars have been exchanged. 
+
+	def front_back(str):
+		front_char = str[:-1]
+		back_char = str[:0]
+		return str 
+
+		def front_back(str):
+			front_char = str[:0]
+			back_char = len(str[-1:])
+			return str
+		
+	#problem 12
+	#front3--Given a string, we'll say that the front is the front 3 chars of the string. if the string length is less than 3, the front is whatever is there. Return a new string which is 3 copies of the front.
+
+	def front3(str):
+		str = str
+		if len(str) < 4;
+			return str * 3
+		elif len(str) > 4:
+			return str * 3
+
+	def front3(str):
+		if len(str) < 4 or len(str) > 4:
+			return str *3
+
+	def front3(str):
+		if len(str) <= 4:
+			return str *3
+		else:
+			return null
+			
+	def front3(str):		
+		first_chars = str[:3]
+		return first_chars * 3
+
+
+
