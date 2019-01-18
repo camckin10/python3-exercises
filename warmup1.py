@@ -77,3 +77,95 @@ def pos_neg(a,b,negative):
 		return True
 	else:
 		return False
+
+#problem 6
+#not_string- Given a string, return a new string with "not" in front of it. However, if string already has "not", return unchanged. 
+
+def not_string(str):
+	if str == "not" str:
+		return True
+	elif "not" str == "not" str:
+		return False
+#PLEASE NOTE: I did not solve this problem yet.
+#Below is the solution given by the site.
+
+#site solution
+def not_string(str):
+  if len(str) >= 3 and str[:3] == "not":
+    return str
+  return "not " + str
+  # str[:3] goes from the start of the string up to but not
+  # including index 3
+
+
+	#problem 7
+	#sleep_in--Parameter weekday is True if it is a weekday, parameter vacation is True if we are on vacation. We sleep in if it is NOT a weekday and we're on vacation. Return True if we sleep in. 
+
+	#weekday = True - not on vacation
+	#vacaction = True - not a weekday
+	#sleep_in = True - on vacation
+
+	def sleep_in(weekday,vacation):
+		weekdays = ["Mon", "Tues", "Wed","Thurs","Fri"]
+		if weekday != vacation:
+			return True
+		elif vacation:
+			return True
+
+		#second solution
+		def sleep_in(weekday,vacation):
+			if weekday != vacation:
+				return True
+			elif weekday == weekday:
+				return True
+			else:
+				return False 
+
+#problem 8 
+#monkey trouble-We have 2 monkeys, a and b, and the parameters a_smile and b_smile indicate if each if smiling. We are in trouble if both are smiling or if neither of them are smiling. Return True if we are in trouble
+
+def monkey_trouble(a_smile, b_smile):
+	if a_smile and b_smile:
+		return True
+	elif not a_smile and not b_smile:
+		return True
+	else:
+		return False 
+
+	#problem 9
+	#sum_double--Given two int values, return their sum. Unless the two values are the same, then return double their sum.
+
+	def sum_double(a,b):
+		a= 5   num = 0 
+		b = 10 sum = 0
+		if a + b:
+			return num
+		if a == a and b == b:
+			return a * 2 and b * 2
+		else:
+			return False
+
+			#second solution
+			def sum_double(a,b):
+				if a + b = sum:
+					return sum
+				elif a == b:
+					return a * 2 and b * 2
+				else: 
+					return False
+
+  #problem 10
+	#missing_char- Given a non-empty string and an int n, return a new string where the char at index n has been removed. The value of n will be a valid index of a char in the original string(i.e. n will be in the range 0..len(str)-1 inclusive)
+
+	#whew this one was a doozy!
+
+	def missing_char(str,n):
+		if str == 5
+		 print(str[:0])
+		elif str < 2:
+			print(str[:1])
+		elif str == 3:
+			print(str[:1])
+		else:
+			return null
+
