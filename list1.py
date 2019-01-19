@@ -64,4 +64,39 @@ def first_last6(nums):
 		else:
 			return False 
 
-			
+	#problem 5 
+	#sum3--Given an array of ints length 3, return the sum of all the elements.
+
+	def sum3(nums):
+		sum_result = (sums(nums))
+		return sum_result
+
+	#problem 6 
+	#rotate_left3--Given an array of ints length 3, return an array with the elements "rotated left" so {1,2,3} yields {2,3,1}. 
+
+	def rotate_left3(nums):
+		return [nums[1], nums[2], nums[0]]
+
+		def rotate_left3(nums):
+			return nums[1:] + nums[:1] 
+
+	#problem 7
+	#reverse3--Given an array of ints length 3, return order, so {1,2,3} becomes {3,2,1}
+
+	def reverse3(nums):
+		nums.reverse()
+		return nums
+
+	#problem 8
+	#max_end3--Given an arry of ints length 3, figure out which is larger, the first or last element in the array, and set all the other elements to be that value. Return the changed array. 
+
+	def max_end3(nums):
+		max1 = max(nums[0], nums[-1])
+		return [max1, max1, max1]
+
+	def max_end3(nums):
+		m = max(nums[0], nums[2])
+		return [ m, m, m]
+
+	#problem 9 
+	#3
