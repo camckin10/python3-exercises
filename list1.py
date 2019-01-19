@@ -99,4 +99,64 @@ def first_last6(nums):
 		return [ m, m, m]
 
 	#problem 9 
-	#3
+	#sum2--Given an array ints, return the sum of the first two elements in the array. If the array length is less than 2, just sum up the elements that exist, returning 0 if the array is length 0. sum2([1,2,3]) --> 3 
+
+	#this solution gave an invalid error syntax
+	def sum2(nums):
+		if len(nums) >= 3:
+			result = num[0] + num[1]
+			return result 
+		elif len(nums) <= 3:
+			result = num[0] + num[0]
+			return result
+		else:
+			return False 
+
+   #3 out of 9 tests
+	def sum2(nums):
+		if len(nums) == 0 :
+			return 0 
+		elif len(nums) == 1:
+			return nums[0]
+			return nums[0] + nums[1]
+
+	#problem 10
+	#middle_way--Given 2 int arrays, a and b, each length 3, return a new array length 2 containing their middle elements. middle_way([1,2,3], [4,5,6]) --> 2,3 
+
+	def middle_way(a,b):
+		if len(a) and len(b) == 3:
+			return a[1] and b[1]
+		else:
+			return False
+
+	def middle_way(a,b):
+		return [a[1], b[1]]
+		#wrap 2 arrays in a list 
+
+
+		#problem 11
+		#make_ends--Given an array of ints, return a new array length 2 containing the first and last elements from the original array. The original array wil be length 1 or more.  make_ends([1,2,3])--> [1,3]
+
+		def make_ends(nums):
+			return [nums[0], nums[-1]]
+
+	  #problem 12
+		#has23--Given an int array length 2, return True if it contains a 2 or 3. 
+		#has23([2,5]) -- True  has23([4,5])-- False
+
+		def has23(nums):
+			if nums == 2 and nums == 3:
+				return True
+			else:
+				return False 
+
+		def has23(nums):
+			if len(nums) == 2 or len(nums) == 3:
+				return True
+			else:
+				return False 
+
+
+	
+
+		
