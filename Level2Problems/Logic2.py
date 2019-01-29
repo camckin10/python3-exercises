@@ -89,3 +89,76 @@ def no_teen_sum(a,b,c):
 
 #5 out of 17 tests passed
 def no_teen_sum(a,b,c):
+	sum = a + b + c
+	def fix_teen(n):
+		if sum != 15 or sum != 16:
+			return sum 
+		else:
+			return sum 
+
+#Problem 5 -- round_sum
+#For this problem, we'll round an int value up to the next multiple of 10 if its rightmost digit is 5 or more, so 15 rounds up to 20. Alternately, round down to the previous multiple of 10 if its rightmost digit is less than 5, so 12 rounds down to 10. Given 3 ints, a b c, return the sum of their rounded values. To avoid code repetition, write a separate helper "def round10(num):" and call it 3 times. Write the helper entirely below and at the same indent level as round_sum().
+
+#6 out of 20 tests
+def round10(num):
+	if num % 10 >= 5:
+		return num / 10 + 10
+	else:
+		return num/10 
+
+
+
+#Problem 6 -- close_far
+#Given three ints, a b c, return True if one of b or c is "close" (differing from a by at most 1), while the other is "far", differing from both other values by 2 or more. Note: abs(num) computes the absolute value of a number.
+
+#6 out of 13 tests 
+def close_far(a,b,c):
+	if a <= 1 or a >=2 :
+		return True
+	else:
+		return False 
+
+#6 out of 13 tests
+def close_far(a,b,c):
+	if b or c == abs(-1):
+		return True
+	elif b or c  == abs(2):
+		return True
+	else:
+		return False 
+
+#6 out of 13 tests
+def close_far(a,b,c):
+	if b <= 1 or c <= 1:
+		return True
+	elif b >=2 or c >= 2:
+		return True
+	else:
+		return False 
+
+#even wrapping abs() to wrap around ints still returns 6 out of 13 tests. 
+
+#Problem 7 -- make_chocolate
+#We want make a package of goal kilos of chocolate. We have small bars (1 kilo each) and big bars (5 kilos each). Return the number of small bars to use, assuming we always use big bars before small bars. Return -1 if it can't be done.
+
+# 6 out of 25 tests
+def make_chocolate(small,big,goal):
+	if small + big == goal:
+		return small
+	elif big == goal:
+		return small 
+	elif -1 == -1:
+		return -1
+	else:
+		return False 
+
+#5 out of 25 tests
+def make_chocolate(big,small,goal):
+	if small == 1:
+		return goal
+	elif big == 5:
+		return small
+	elif -1 == -1:
+		return -1
+	else:
+		return False
